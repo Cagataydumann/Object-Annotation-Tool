@@ -1,0 +1,15 @@
+﻿@model List<Class>
+
+@if (Model != null)
+{
+    <select id="classSelection" name="classSelection" required>
+        @foreach (var item in Model)
+        {
+            <option value="@item.Id">@item.ClassName</option>
+        }
+    </select>
+}
+else
+{
+    <p>Sınıf verileri yüklenirken bir hata oluştu.</p>
+}

@@ -1,0 +1,15 @@
+﻿@model string[]
+
+@if (Model != null)
+{
+    <ul>
+        @foreach (var line in Model)
+        {
+            <li>@line</li>
+        }
+    </ul>
+}
+else
+{
+    <p>Bounding box verileri yüklenirken bir hata oluştu.</p>
+}

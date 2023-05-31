@@ -1,0 +1,9 @@
+﻿@model List<string>
+
+<h3>Sınıf Listesi</h3>
+<ul>
+    @foreach (var className in Model)
+    {
+        <li>@className</li>
+    }
+</ul>

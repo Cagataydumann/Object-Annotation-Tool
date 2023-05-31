@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Object Annotation Tool</title>
+    <link href="~/css/site.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <h2>Object Annotation Tool</h2>
+        <input type="file" id="imageUpload" accept="image/*" required />
+        <div>
+            <label for="ClassName">Sınıf Etiketi:</label>
+            <input type="text" id="ClassName" required />
+        </div>
+        <button id="startAnnotationBtn">Etiketlemeyi Başlat</button>
+        <div id="canvasContainer">
+            <canvas id="imageCanvas"></canvas>
+        </div>
+        <button id="saveAnnotationsBtn">Etiketleri Kaydet</button>
+        <button id="getClassesBtn">Sınıf Listesini Getir</button>
+        <button id="getAnnotationsBtn">Annotation.txt Dosyasını Getir</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="~/js/site.js"></script>
+</body>
+</html>
